@@ -30,7 +30,7 @@ function LogoRow({
   const items = [...logos, ...logos];
 
   return (
-    <div className={`overflow-hidden ${offset ? "mt-5 md:mt-6" : ""}`}>
+    <div className="overflow-hidden">
       <div
         className={`flex w-max gap-4 md:gap-6 ${
           reverse ? "marquee-track-reverse" : "marquee-track"
@@ -68,9 +68,13 @@ export default function Portfolio() {
         </motion.div>
       </div>
 
-      <div className="space-y-0 overflow-hidden">
-        <LogoRow logos={topRow} />
-        <LogoRow logos={bottomRow} reverse offset />
+      <div className="mx-auto max-w-5xl px-6 md:px-10">
+        <div className="rounded-[32px] border border-white/10 bg-[#0a0a0a] py-8 md:py-10 overflow-hidden isolation-isolate">
+          <div className="space-y-5 md:space-y-6">
+            <LogoRow logos={topRow} />
+            <LogoRow logos={bottomRow} reverse offset />
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -28,7 +28,7 @@ export default function Intro({ scrollProgress }: IntroProps) {
         className="mx-auto max-w-3xl text-center"
         style={{ opacity: contentOpacity, y: contentY }}
       >
-        <div className="space-y-8 text-base leading-relaxed text-white/75 md:text-lg md:leading-8">
+        <div className="space-y-8 text-lg leading-relaxed text-white font-bold md:text-2xl md:leading-[2.5rem]">
           {paragraphs.map((text, index) => (
             <motion.p
               key={text}
@@ -48,7 +48,7 @@ export default function Intro({ scrollProgress }: IntroProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.25 }}
-          className="mx-auto mt-12 max-w-xl space-y-4 text-left text-base text-white/85 md:text-lg"
+          className="mx-auto mt-12 max-w-xl space-y-4 text-left text-lg text-white font-bold md:text-2xl"
         >
           {bullets.map((item, index) => (
             <motion.p

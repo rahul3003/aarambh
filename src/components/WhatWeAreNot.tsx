@@ -15,7 +15,7 @@ export default function WhatWeAreNot() {
           <div className="mb-6 flex justify-center">
             <Image src="/images/icon.png" alt="" width={20} height={20} />
           </div>
-          <h2 className="font-[family-name:var(--font-unbounded)] text-3xl font-medium tracking-tight text-white md:text-4xl lg:text-5xl">
+          <h2 className="font-[family-name:var(--font-manrope)] text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl">
             What we are not
           </h2>
 

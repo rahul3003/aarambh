@@ -29,11 +29,11 @@ function FeaturedCard({ card }: { card: FounderCard }) {
       <div className="mx-auto max-w-2xl space-y-6">
         {"shouldNot" in card && card.shouldNot && (
           <>
-            <p className="font-[family-name:var(--font-manrope)] text-sm text-white/45 md:text-base">
+            <p className="font-[family-name:var(--font-manrope)] text-sm text-white md:text-base">
               Not every deeptech company should:
             </p>
             <PipeLine items={card.shouldNot} />
-            <p className="font-[family-name:var(--font-manrope)] text-sm text-white/45 md:text-base">
+            <p className="font-[family-name:var(--font-manrope)] text-sm text-white md:text-base">
               We help founders evaluate:
             </p>
             {card.evaluate && <PipeLine items={card.evaluate} />}
@@ -134,7 +134,9 @@ export default function Founders() {
             <Image src="/images/icon.png" alt="" width={20} height={20} />
           </div>
           <h2 className="font-[family-name:var(--font-manrope)] text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl">
-            How we work with Deeptech Founders
+            How we work with Deeptech
+            <br />
+            Founders
           </h2>
           <p className="mt-4 font-[family-name:var(--font-manrope)] text-base text-white/45 md:text-lg">
             Discover support like no other, here&apos;s a few aspects we

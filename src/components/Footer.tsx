@@ -13,7 +13,7 @@ export default function Footer() {
               alt="Aarambh"
               width={159}
               height={71}
-              className="mb-6 h-12 w-auto"
+              className="mb-6 h-9 w-auto"
             />
             <p className="text-sm leading-relaxed">
               Ground Floor, 96,
@@ -58,18 +58,18 @@ export default function Footer() {
         </div>
 
         <p className="mt-12 text-xs text-black/70">
-          © 2024 — CoCreate All Rights Reserved
+          © 2026 — CoCreate All Rights Reserved
         </p>
       </div>
 
       <div className="footer-marquee-clip relative overflow-hidden">
-        <div className="footer-marquee-ltr flex w-max whitespace-nowrap">
+        {/* <div className="footer-marquee-ltr flex w-max whitespace-nowrap">
           {Array.from({ length: 8 }).map((_, index) => (
             <span key={index} className="footer-marquee-text px-8 md:px-12">
               GET IN TOUCH
             </span>
           ))}
-        </div>
+        </div> */}
       </div>
     </footer>
   );

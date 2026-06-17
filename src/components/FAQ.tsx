@@ -34,7 +34,7 @@ export default function FAQ({ scrollProgress }: FAQProps) {
           <span className="mb-4 inline-block text-xs tracking-[0.3em] text-white/40 uppercase">
             Frequently Asked Questions
           </span>
-          <h2 className="font-[family-name:var(--font-unbounded)] text-3xl font-medium tracking-tight text-white md:text-4xl lg:text-5xl">
+          <h2 className="font-[family-name:var(--font-manrope)] text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl">
             Got Questions?
             <br />
             We&apos;ve Got Answers!
