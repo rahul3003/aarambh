@@ -63,7 +63,7 @@ export default function Hero() {
     : { x: ["25vw", "-125vw"], y: ["-40vh", "80vh"] };
   const card1Transition = {
     duration: isCard1First ? 18 : 24,
-    ease: "linear",
+    ease: "linear" as const,
   };
 
   // Card 2:
@@ -76,7 +76,7 @@ export default function Hero() {
     : { x: ["25vw", "-125vw"], y: ["20vh", "140vh"] };
   const card2Transition = {
     duration: isCard2First ? 12 : 24,
-    ease: "linear",
+    ease: "linear" as const,
   };
 
   // Card 3:
@@ -89,7 +89,7 @@ export default function Hero() {
     : { x: ["25vw", "-125vw"], y: ["-40vh", "80vh"] };
   const card3Transition = {
     duration: isCard3First ? 6 : 24,
-    ease: "linear",
+    ease: "linear" as const,
   };
 
   // Card 4:
@@ -102,7 +102,7 @@ export default function Hero() {
   };
   const card4Transition = {
     duration: 24,
-    ease: "linear",
+    ease: "linear" as const,
   };
 
   return (
